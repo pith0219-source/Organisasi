@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organisasi Kantor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #004466; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; display: inline-block; }
+    section { padding: 40px; }
+    .services { display: flex; gap: 20px; }
+    .service { flex: 1; background: #f0f0f0; padding: 20px; border-radius: 5px; }
+    footer { background: #004466; color: white; text-align: center; padding: 10px; }
+    form input, form textarea { width: 100%; margin-bottom: 10px; padding: 10px; }
+    form button { background: #004466; color: white; padding: 10px 20px; border: none; }
+
+    /* Tambahan responsif */
+    @media (max-width: 768px) {
+      .services { flex-direction: column; }
+      nav a { margin: 10px; display: block; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Organisasi Kantor</h1>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Organisasi</h2>
+    <p>Kami adalah organisasi yang berfokus pada layanan profesional untuk mendukung kebutuhan kantor.</p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Layanan A</h3>
+        <p>Deskripsi singkat layanan A.</p>
+      </div>
+      <div class="service">
+        <h3>Layanan B</h3>
+        <p>Deskripsi singkat layanan B.</p>
+      </div>
+      <div class="service">
+        <h3>Layanan C</h3>
+        <p>Deskripsi singkat layanan C.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p>Alamat: Jl. Contoh No. 123, Makassar</p>
+    <p>Telepon: 0411-123456</p>
+    <p>Email: info@organisasi.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Organisasi Kantor</p>
+  </footer>
+</body>
+</html>
